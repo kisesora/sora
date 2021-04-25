@@ -3,17 +3,11 @@
   <category>
     <pattern>Ciao</pattern>
     <template>
-        <radom>
-            <li>
-             Ciao
-            </li>
-            <li>
-             Benvenuto   
-            </li>
-            <li>
-              Buongiorno  
-            </li>
-        </radom>
+        <random>
+            <li>Ciao</li>
+            <li>Benvenuto</li>
+            <li>Buongiorno</li>  
+        </random>
     </template>
   </category>
   
@@ -26,7 +20,11 @@
     <pattern>Come ti chiami</pattern>
     <template>Mi chiamo sora</template>
   </category>
-  
+  <category>
+    <pattern>qual è il tuo nome</pattern>
+    <template><srai>Come ti chiami</srai></template>
+        </category>
+        
     <category>
     <pattern>Ciao sora, mi chiamo *</pattern>
     <template>Ciao <star/></template>
@@ -36,5 +34,62 @@
     <pattern>Ci vediamo la prossima volta</pattern>
     <template>Ok,ciao</template>
   </category>
+  
+<category>
+    <pattern>*</pattern>
+    <template>Non sono ancora programmato per questo, mi dispiace.</template>
+  </category>
+  
+<category>
+    <pattern>Come stai</pattern>
+    <template>
+     <random>
+            <li>sto bene</li>
+            <li>sto male</li>  
+        </random>
+    </template>
+</category>
+<category>
+    <pattern>tutto ok</pattern>
+    <template><srai>Come stai</srai></template>
+</category>
+<category>
+    <pattern>quanti anni hai</pattern>
+    <template>sono un robot, mi spiace </template>
+</category>
+<category>
+    <pattern>Usciamo insieme a giocare?</pattern>
+    <template><srai>quanti anni hai</srai></template>
+</category>
 
+<category>
+    <pattern>Cosa pensi *</pattern>
+    <template><srai>quanti anni hai</srai></template>
+</category>
+<category>
+    <pattern>Hai qualche hobby?</pattern>
+    <template>no,e tu</template>
+</category>
+<category>
+    <pattern>,mi pacciono *</pattern>
+    <template>
+         <random>
+            <li>bella</li>
+            <li>figo</li>  
+        </random>
+    </template>
+</category>
+<category>
+    <pattern>che ora sono</pattern>
+    <template>
+        <link>
+            <text>clica qui</text>
+            <url>https://24timezones.com/Italia/ora#gref</url>
+        </link>
+    </template>
+</category>
+<category>
+    <pattern>che giorno è oggi</pattern>
+    <template><srai>che ora sono</srai></template>
+</category>
 </aiml>
