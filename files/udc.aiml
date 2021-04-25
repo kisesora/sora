@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>Ciao</pattern>
+    <template>
+        <radom>
+            <li>
+             Ciao
+            </li>
+            <li>
+             Benvenuto   
+            </li>
+            <li>
+              Buongiorno  
+            </li>
+        </radom>
+    </template>
+  </category>
+  
+  <category>
+      <pattern>Mi chiamo *</pattern>
+      <template>Ciao <star/> </template>
+  </category>
+  
+    <category>
+    <pattern>Come ti chiami</pattern>
+    <template>Mi chiamo sora</template>
+  </category>
+  
+    <category>
+    <pattern>Ciao sora, mi chiamo *</pattern>
+    <template>Ciao <star/></template>
+  </category>
+  
+    <category>
+    <pattern>Ci vediamo la prossima volta</pattern>
+    <template>Ok,ciao</template>
+  </category>
+
+</aiml>
